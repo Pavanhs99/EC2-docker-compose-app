@@ -36,5 +36,6 @@ services:
        retries: 3
     container_name: flaskk
 
+
 volumes:
   shared_vol:

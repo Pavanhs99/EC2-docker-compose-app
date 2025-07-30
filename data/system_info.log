@@ -1,0 +1,3 @@
+user was greeted with device uptme
+2025-07-29 06:35:05 | system_info.sh: wrote to message.txt
+2025-07-29 06:35:05 | flask: read message.txt and displayed it in http://13.201.190.160:5000
