@@ -1,0 +1,40 @@
+version: "3.8"
+
+
+services:
+  systeminfo:
+    build:
+       context: ./scripts
+    command: ["sh", "system_info.sh"]
+    volumes:
+       - shared_vol:/data
+    container_name: system_info
+
+  logger:
+    build:
+       context: ./scripts
+    command: ["sh", "logger.sh"]
+    volumes:
+       - shared_vol:/data
+    container_name: loggerr
+
+  flask:
+    build:
+       context: ./flask
+    command: ["python", "app.py"]
+    ports:
+       - "5000:5000"
+    volumes:
+       - shared_vol:/data
+    depends_on:
+       - systeminfo
+       - logger
+    healthcheck:
+       test: ["CMD", "curl", "-f", "http://localhost:5000"]
+       interval: 10s
+       timeout: 5s
+       retries: 3
+    container_name: flaskk
+
+volumes:
+  shared_vol:

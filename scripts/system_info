@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "welcome dear $whoami, your host is $hostname and device uptime is $uptime"

@@ -1,0 +1,3 @@
+initial message
+Hi dear user root, welcome by host dd28c0278295 and your device uptime is  05:23:41 up 4 days, 17 min,  0 users,  load average: 0.00, 0.00, 0.00
+Hi dear user root, welcome by host 54bfd4329ba7 and your device uptime is  06:35:05 up 4 days,  1:28,  0 users,  load average: 0.08, 0.01, 0.00
