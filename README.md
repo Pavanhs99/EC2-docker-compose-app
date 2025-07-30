@@ -73,13 +73,9 @@
 
 ## How to run
 
-From the root project folder:
-```bash
-
+git clone https://github.com/yourname/project.git
+cd project
 docker-compose up --build
-
-```
-Check system_info.log in the volume folder for logged data.
 
 ----
 
@@ -90,5 +86,19 @@ Check system_info.log in the volume folder for logged data.
    - The project is safe and does not modify your host system
 
    - Ideal for learning Docker, Flask, bash scripting, and multi-container architecture
+
+----
+
+## Highlights
+
+- Set up EC2 and handled port/firewall issues
+
+- Docker Compose with shared volume communication
+
+- Debugging Docker build errors and Flask app routes
+
+----
+
+## Architecture Diagram
 
 ![Architecture Diagram](flask-final.drawio.png)
