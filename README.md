@@ -91,4 +91,4 @@ Check system_info.log in the volume folder for logged data.
 
    - Ideal for learning Docker, Flask, bash scripting, and multi-container architecture
 
-
+![Architecture Diagram](flask-final.drawio.png)
