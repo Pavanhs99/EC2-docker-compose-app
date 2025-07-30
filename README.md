@@ -6,6 +6,14 @@
 
 ----
 
+# Live Deployment
+  
+   - **EC2 Public IP**: http://13.201.190.160:5000  
+
+   > *Note: The server may take a few seconds to respond if it's waking from sleep.*
+
+----
+
 # Project structure
 
 ```
