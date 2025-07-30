@@ -1,9 +1,8 @@
 
 # Multi service docker flask project
- 
-   - This is a mini DevOps project demonstrating how to build corodinate multiple Dockerized services using docker-compose and individual dockerfiles.
-   - The project conatains three services or containers that work together via a shared volume, and it is deployed on AWS EC2 using SSH. 
 
+   - A simple DevOps project where a Flask web app communicates with a Bash script through a shared Docker volume. Built using Docker Compose and deployed on AWS EC2.
+ 
 ----
 
 # Live Deployment
@@ -11,6 +10,46 @@
    - **EC2 Public IP**: http://13.201.190.160:5000  
 
    > *Note: The server may take a few seconds to respond if it's waking from sleep.*
+
+----
+
+# Highlights
+
+   - Flask web interface running in one container
+
+   - Bash script running in another container
+
+   - Shared volume for inter-container communication
+
+   - Logs stored in a persistent volume
+
+   - Docker Compose to manage services
+
+   - Deployed on AWS EC2 (Ubuntu)
+
+----
+
+# Tech Stack
+
+   - Python (Flask)
+
+   - Bash Scripting
+
+   - Docker & Docker Compose
+
+   - AWS EC2 (Ubuntu)
+
+   - Linux
+
+----
+
+## How to run
+
+  - git clone https://github.com/yourname/project.git
+
+  - cd project
+
+  - docker-compose up --build
 
 ----
 
@@ -44,68 +83,17 @@
 
 ----
 
-## How it works
+# What i learned
 
-   - Service 1: system_info.sh
+   - How to create multi-container setups using Docker Compose
 
-              - Greets the user ( whoami )
- 
-              - Captures system info ( hostname, uptime )
+   - Sharing data between containers using volumes
 
-              - Writes output to a shared volume
+   - Running Bash and Python services in isolation
 
-   - Service 2: logger.sh
+   - Real-world EC2 deployment
 
-              - Reads shared volume data
-
-              - Appends it to system_info.log with tamestamp
-
-   - Service 3: Flask app
-
-              - Reads system info from the shared volume
-
-              - Displays it via a simple flask web interface on port 5000
-
-----
-
-# Deployment
-
-   - The app is containerized using docker using docker and run using docker-compose
-
-   - Deployed on an AWS EC2 instance
-
-   - Accessed via browser:
-     http://<your-public-ip>:5000
-
-----
-
-## How to run
-
-  - git clone https://github.com/yourname/project.git
-
-  - cd project
-
-  - docker-compose up --build
-
-----
-
-## Note
-
-   - Temporary files, Python caches, Logs, and shared volume data are excuded using .gitignore
-
-   - The project is safe and does not modify your host system
-
-   - Ideal for learning Docker, Flask, bash scripting, and multi-container architecture
-
-----
-
-## Highlights
-
-- Set up EC2 and handled port/firewall issues
-
-- Docker Compose with shared volume communication
-
-- Debugging Docker build errors and Flask app routes
+   - Logging strategies using volumes
 
 ----
 
