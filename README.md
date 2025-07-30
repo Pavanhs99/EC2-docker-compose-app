@@ -73,9 +73,11 @@
 
 ## How to run
 
-git clone https://github.com/yourname/project.git
-cd project
-docker-compose up --build
+  - git clone https://github.com/yourname/project.git
+
+  - cd project
+
+  - docker-compose up --build
 
 ----
 
